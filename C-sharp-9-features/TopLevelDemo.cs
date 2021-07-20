@@ -1,4 +1,5 @@
-﻿using System;
+﻿/*
+using System;
 using System.Threading.Tasks;
 
 Console.WriteLine("Starting Top Level");
@@ -54,6 +55,7 @@ async static Task<int> Calculate(int a, int b)
 var result = await Calculate(1, 2);
 Console.WriteLine(result);
 
+*/
 /*
 Top-level statements make it easier to create simple programs for use to explore new algorithms. 
 You can experiment with algorithms by trying different snippets of code. Once you've learned what works, you can refactor the code to be more maintainable.

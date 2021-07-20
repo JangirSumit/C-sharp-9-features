@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace C_sharp_9_features
 {
+    /// <summary>
+    /// https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
@@ -35,7 +39,18 @@ namespace C_sharp_9_features
             var newRecordDemo = recordDemo with { A = 20, B = 30 };
             Console.WriteLine($"A: {newRecordDemo.A}, B = {newRecordDemo.B}, C: {newRecordDemo.C}");
 
+            Console.WriteLine("\n*** Fit and FInish Demo ***\n");
+
+            List<int> intCollection = new();
+            Console.WriteLine(intCollection.Count);
+            Console.WriteLine(GetCollection().Count);
+
             Console.ReadLine();
+        }
+
+        public static List<string> GetCollection()
+        {
+            return new();
         }
     }
 }
